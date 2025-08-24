@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QMaster.com/Quizzes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width:1200px )" href="phone.css">
+    <script src="script.js" defer></script>
+
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="navbar-left">QMaster</div>
+        <ul class="navbar-manu">
+          <li class="manu-item">
+            <a href="index.html" >Home</a>
+          </li>
+          <li class="manu-item">
+            <a href="Quizzes.html" class="active">Quizzes</a>
+          </li>
+          <li class="manu-item"><a href="leaderboard.html" >Leaderboard</a></li>
+          <li class="manu-item"><a href="about.html" >About us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="quiz-categories">
+      <h1>Select a Catagory</h1>
+      <div class="category-buttons">
+        <div class="category-btn"><a href="#arts">Arts</a></div>
+        <div class="category-btn"><a href="#CS">Computer Science</a></div>
+        <div class="category-btn"><a href="#science">Medical Science</a></div>
+        <div class="category-btn"><a href="#maths">Math</a></div>
+        <div class="category-btn"><a href="#gk">General Knowledge</a></div>
+        <div class="category-btn"><a href="#English">English Grammar</a></div>
+        <div class="category-btn"><a href="#history">History</a></div>
+        <div class="category-btn"><a href="#sports">Sports</a></div>
+      </div>
+    </section>
+    <section class="page-content">
+      <h1>Available Quizzes</h1>
+      <p>Choose a quiz to test your knowledge.</p>
+
+      <!-- 🎨 Arts -->
+      <h2 class="category-title" id="arts">Arts</h2>
+      <div class="quizzes-grid">
+        <div class="quiz-card">
+          <h3 class="quiz-topic" id="quiz-topic">Painting</h3>
+          <p class="quiz-desc">Learn colors, styles, and art history basics.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=painting" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Music</h3>
+          <p class="quiz-desc">
+            Test your knowledge of instruments and genres.
+          </p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=music" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Theatre</h3>
+          <p class="quiz-desc">Famous plays, actors, and drama styles.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=theatre" class="quiz-btn">Start</a>
+        </div>
+      </div>
+
+      <!-- 💻 Computer Science -->
+      <h2 class="category-title" id="CS">Computer Science</h2>
+      <div class="quizzes-grid">
+        <div class="quiz-card">
+          <h3 class="quiz-title">HTML</h3>
+          <p class="quiz-desc">
+            Test your basics of web structure and elements.
+          </p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=html" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">CSS</h3>
+          <p class="quiz-desc">Master styling, selectors, and layouts.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=css" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">JavaScript</h3>
+          <p class="quiz-desc">Challenge your coding logic and syntax.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=javascript" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Python</h3>
+          <p class="quiz-desc">
+            Test basics of programming and data structures.
+          </p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=python" class="quiz-btn">Start</a>
+        </div>
+      </div>
+
+      <!-- 🔬 Science -->
+      <h2 class="category-title" id="science">Medical Science</h2>
+      <div class="quizzes-grid">
+        <div class="quiz-card">
+          <h3 class="quiz-title">Physics</h3>
+          <p class="quiz-desc">Explore mechanics, motion, and energy.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=physics" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Chemistry</h3>
+          <p class="quiz-desc">Atoms, reactions, and periodic table basics.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=chemistry" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Biology</h3>
+          <p class="quiz-desc">Test your knowledge of cells and organisms.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=biology" class="quiz-btn">Start</a>
+        </div>
+      </div>
+
+      <!-- 🌍 General Knowledge -->
+      <h2 class="category-title" id="gk">General Knowledge</h2>
+      <div class="quizzes-grid">
+        <div class="quiz-card">
+          <h3 class="quiz-title">Current Affairs</h3>
+          <p class="quiz-desc">Stay updated with recent world events.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=currentAffairs" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Geography</h3>
+          <p class="quiz-desc">World maps, countries, and capitals.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=geography" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Politics</h3>
+          <p class="quiz-desc">Governments, leaders, and policies.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=politics" class="quiz-btn">Start</a>
+        </div>
+      </div>
+
+      <!-- ➗ Maths -->
+      <h2 class="category-title" is="maths">Mathematics</h2>
+      <div class="quizzes-grid">
+        <div class="quiz-card">
+          <h3 class="quiz-title">Algebra</h3>
+          <p class="quiz-desc">Equations, variables, and expressions.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=algebra" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Geometry</h3>
+          <p class="quiz-desc">Shapes, angles, and measurements.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=geometry" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Statistics</h3>
+          <p class="quiz-desc">Mean, median, and probability basics.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=statistics" class="quiz-btn">Start</a>
+        </div>
+      </div>
+
+      <!-- 📝 English -->
+      <h2 class="category-title" id="English">English</h2>
+      <div class="quizzes-grid">
+        <div class="quiz-card">
+          <h3 class="quiz-title">Grammar</h3>
+          <p class="quiz-desc">Nouns, verbs, tenses, and sentence structure.</p>
+          <p class="quiz-meta">4 Questions • 15s each</p>
+          <a href="quiz.html?quiz=grammar" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Vocabulary</h3>
+          <p class="quiz-desc">Improve word power and synonyms.</p>
+          <p class="quiz-meta">4 Questions • 15s each</p>
+          <a href="quiz.html?quiz=vocabulary" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Comprehension</h3>
+          <p class="quiz-desc">Test your reading and understanding skills.</p>
+          <p class="quiz-meta">4 Questions • 15s each</p>
+          <a href="quiz.html?quiz=comprehension" class="quiz-btn">Start</a>
+        </div>
+      </div>
+
+      <!-- 📜 History -->
+      <h2 class="category-title" id="history">History</h2>
+      <div class="quizzes-grid">
+        <div class="quiz-card">
+          <h3 class="quiz-title">World History</h3>
+          <p class="quiz-desc">Events that shaped human civilization.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=worldHistory" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Ancient Civilizations</h3>
+          <p class="quiz-desc">Egyptians, Romans, and Mesopotamians.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=ancientHistory" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card" data-category="history">
+          <h3 class="quiz-title">Modern History Quiz</h3>
+          <p class="quiz-desc">
+            Learn about revolutions, wars, and movements from the 18th century
+            onward.
+          </p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a class="quiz-btn" href="quiz.html?quiz=modernHistory">Start</a>
+        </div>
+      </div>
+
+      <!-- ⚽ Sports -->
+      <h2 class="category-title" id="sports">Sports</h2>
+      <div class="quizzes-grid">
+        <div class="quiz-card">
+          <h3 class="quiz-title">Football</h3>
+          <p class="quiz-desc">Legends, World Cups, and rules.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=football" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Cricket</h3>
+          <p class="quiz-desc">Test your cricket records and rules.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=cricket" class="quiz-btn">Start</a>
+        </div>
+        <div class="quiz-card">
+          <h3 class="quiz-title">Olympics</h3>
+          <p class="quiz-desc">Sports events and medal winners.</p>
+          <p class="quiz-meta">5 Questions • 15s each</p>
+          <a href="quiz.html?quiz=olympics" class="quiz-btn">Start</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <div class="footer">www.QMaster.com</div>
+    </footer>
+  </body>
+</html>

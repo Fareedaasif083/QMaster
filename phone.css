@@ -1,0 +1,132 @@
+#navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar-manu {
+    /* flex-direction: column; */
+    gap: 10px;
+    margin: 10px 0 0 0;
+  }
+
+  .navbar-left {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  #hero {
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  #hero .hero-content h1 {
+    font-size: 20px;
+  }
+
+  #hero .hero-content p {
+    width: 100%; 
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  #hero .hero-content .btn-start {
+    margin: 12px auto; 
+    display: block;
+  }
+
+  #features {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #features .features-content div p {
+    width: 100%; 
+    font-size: 14px;
+  }
+
+  .quizzes-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .quizzes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+
+  #cta-footer {
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .cta-title {
+    font-size: 20px;
+  }
+
+  .cta-text {
+    width: 100%; 
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .cta-btn {
+    margin: 12px auto; 
+    display: block;
+  }
+
+  .quiz-top {
+    width: 90%;          /* shrink to fit screen */
+    flex-direction: column; /* stack items vertically if needed */
+    height: auto;        /* allow height to adjust */
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+@media (max-width: 600px) {
+  .quizzes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #hero .hero-content h1,
+  #features .features-content h1,
+  .quizzes-content h1,
+  .cta-title {
+    font-size: 18px;
+  }
+
+  .quiz-card {
+    padding: 1rem;
+  }
+
+  #historyTable th, #historyTable td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
+
+  #historyTable th, #historyTable td {
+    padding: 8px 10px; /* smaller padding */
+    font-size: 14px;   /* reduce font size */
+  }
+
+  /* Optional: reduce header text size */
+  #historyTable th {
+    font-size: 14px;
+  }
+
+  .quiz-top {
+    width: 100%;        /* full width */
+    padding: 10px;
+    border-radius: 15px; /* smaller radius */
+  }
+
+  @media (max-width: 410px) {
+  #historyTable th, #historyTable td {
+    padding: 6px 0px;
+    font-size: 12px;
+  }
+}

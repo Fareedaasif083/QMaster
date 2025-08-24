@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QMastrer.com/leaderboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width:1200px )" href="phone.css">
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="navbar-left">QMaster</div>
+        <ul class="navbar-manu">
+          <li class="manu-item">
+            <a href="index.html" >Home</a>
+          </li>
+          <li class="manu-item">
+            <a href="Quizzes.html" >Quizzes</a>
+          </li>
+          <li class="manu-item">
+            <a href="leaderboard.html" class="active" >Leaderboard</a>
+          </li>
+          <li class="manu-item"><a href="about.html" >About us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="quiz-app" id="quiz-app">
+      <h2>📜 Quiz History</h2>
+      <table id="historyTable">
+        <thead>
+          <tr>
+            <th>Quiz Name</th>
+            <th>Score</th>
+            <th>Percentage</th>
+            <th>Duration</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button id="clearHistoryBtn">Clear History</button>
+    </main>
+    <footer>
+        <div class="footer">www.QMaster.com</div>
+    </footer>
+      <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const tbody = document.querySelector("#historyTable tbody");
+      const count = localStorage.getItem("quizCount") || 0;
+
+      if (count == 0) {
+        tbody.innerHTML = `<tr><td colspan="5">No quiz history found.</td></tr>`;
+      } else {
+        for (let i = 1; i <= count; i++) {
+          const record = localStorage.getItem(`quiz${i}`);
+          if (record) {
+            const parts = record.split(",");
+            const row = document.createElement("tr");
+            row.innerHTML = `
+              <td>${parts[0]}</td>
+              <td>${parts[1]}</td>
+              <td>${parts[2]}</td>
+              <td>${parts[3]}</td>
+              <td>${parts[4]}</td>
+            `;
+            tbody.appendChild(row);
+          }
+        }
+      }
+
+      document.getElementById("clearHistoryBtn").addEventListener("click", () => {
+        localStorage.clear();
+        location.reload();
+      });
+    });
+  </script>
+  </body>
+</html>
